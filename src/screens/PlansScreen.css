@@ -1,0 +1,49 @@
+.plansScreen_plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.plansScreen_plan:hover {
+  opacity: 1;
+}
+
+.plansScreen_plan > button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.plansScreen_info {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plansScreen_plan_disabled > button {
+  background-color: gray !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .plansScreen > p {
+    font-size: smaller;
+  }
+  .plansScreen_info > h5 {
+    font-size: small;
+    padding-left: 0;
+  }
+  .plansScreen_info > h6 {
+    font-size: small;
+    padding-left: 0;
+  }
+  .plansScreen_plan > button {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
